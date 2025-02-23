@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "java (build)",
+			"paths": [
+				"${workspace}"
+			],
+			"isFullBuild": true,
+			"group": "build",
+			"problemMatcher": [],
+			"label": "java (build): Build Workspace",
+			"detail": "$(tools) Build all the Java projects in workspace."
+		},
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "src/repairnator/website/repairnator-mongo-rest-api",
+			"problemMatcher": [],
+			"label": "npm: start - src/repairnator/website/repairnator-mongo-rest-api",
+			"detail": "gulp serve",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
