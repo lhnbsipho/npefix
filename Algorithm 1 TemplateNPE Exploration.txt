@@ -1,0 +1,35 @@
+ Algorithm 1 TemplateNPE: Exploration of all tentative
+ patches based on parametrized templates
+ Input: p: a program
+ Input: t: a test case reproducing a NPE
+ Input: e: expression that triggers the NPE
+ Input: S: a set of repair strategies
+ Output: P: set of tentative patches
+ Output: Q: set of valid patches
+ 1: compile p
+ 2: for s in S do
+ A possible parameter value for s in e
+ 3:
+ 4:
+ 5:
+ 6:
+ 7:
+ 8:
+ 9:
+ 10:
+ 11:
+ 12:
+ 13:
+ 14:
+ for a : A do
+ x apply s on p parametrized by a
+ recompile x
+ if x compiles then
+ add x to P
+ end if
+ run t against x
+ if t succeeds then
+ add x to Q
+ end if
+ end for
+ 15: end for
