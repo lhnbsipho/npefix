@@ -1,0 +1,28 @@
+ Algorithm 2 The Exploration Algorithm of NPEfix
+ Input: p: a program
+ Input: t: a test case reproducing a NPE
+ Input: S: a set of repair strategies
+ Output: P: set of tentative patches
+ Output: Q: set of valid patches
+ 1: Mp create meta-program of p
+ 2: compile Mp
+ 3: execute t against Mp until null dereference
+ 4: D collects all possible metaprogramming patches
+ based on runtime analysis
+ 5: terminate execution
+ 6: for d in D do
+ 7:
+ 8:
+ 9:
+ 10:
+ 11:
+ 12:
+ 13:
+ activate d in metaprogram
+ execute t against Mp
+ p patch corresponding to d
+ add p to P
+ if t succeeds then
+ add p to Q
+ end if
+ 14: end for
