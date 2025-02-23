@@ -167,6 +167,24 @@ java -jar target/npefix-0.2-jar-with-dependencies.jar
 }
 ```
 
+ if (a == null) {
+   a = new Foo();
+   }
+ a.foo();
+
 ## Other usages 
 
 Maven-repair is a Maven plugin for bug-fixing, see <https://github.com/Spirals-Team/repairnator/tree/master/maven-repair>
+## Using maven-repair 
+
+Maven-repair is a Maven plugin for bug-fixing, see <https://github.com/Spirals-Team/repairnator/tree/master/maven-repair>
+
+Install:
+```
+git clone https://github.com/Spirals-Team/npefix/
+
+
+@@ -159,3 +166,7 @@ java -jar target/npefix-0.2-jar-with-dependencies.jar
+  "date": "Wed Jan 27 19:19:37 CET 2016"
+}
+```
